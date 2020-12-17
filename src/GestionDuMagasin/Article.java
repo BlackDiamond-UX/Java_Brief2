@@ -44,7 +44,7 @@ public class Article {
 
 
 //Method ArticleEnSolde
-    public String ArticleEnSolde(){
+    public String articleEnSolde(){
         if (solde == true) {
             return ("(en solde)");
         }

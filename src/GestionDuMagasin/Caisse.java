@@ -22,10 +22,10 @@ public class Caisse {
         System.out.println("###############  " + chariot + " Facture" + "  ###############");
 
         for (Article i : chariot.articlesList.keySet()) {
-//            chariot.remplir(i, chariot.articlesList.get(i));
+
 
             double produit = i.getPrix() * chariot.articlesList.get(i);
-            System.out.println( i.getNom() + ": " + i.getPrix() + " * " + chariot.articlesList.get(i) + " = " + produit + "MAD " + i.ArticleEnSolde());
+            System.out.println( i.getNom() + ": " + i.getPrix() + " * " + chariot.articlesList.get(i) + " = " + produit + "MAD " + i.articleEnSolde());
             montant = montant+produit;
 
         }
